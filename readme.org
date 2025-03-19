@@ -4,16 +4,19 @@
 
 Make sure ~/config/corne.conf~ has ~CONFIG_ZMK_KEYBOARD_NAME~ variable set
 
+```
     # Name the keyboard
     CONFIG_ZMK_KEYBOARD_NAME="Jones Corne Keyboard"
     ...
     # Enable USB Logging (this increases power usage by a significant amount, turn it off when not in use)
     # CONFIG_ZMK_USB_LOGGING=y
+```
 
 ** Build Configs
 
 Create a reset firmware by editing ~build.yaml~
 
+```
    # For simple board + shield combinations, add them
    # to the top level board and shield arrays, for more
    # control, add individual board + shield combinations to
@@ -34,6 +37,7 @@ Create a reset firmware by editing ~build.yaml~
        shield: corne_right nice_view_adapter nice_view
      - board: nice_nano_v2
        shield: settings_reset
+```
    
 ** Flash Process
 
