@@ -5,9 +5,9 @@
 Make sure ~/config/corne.conf~ has ~CONFIG_ZMK_KEYBOARD_NAME~ variable set
 
 ---
-# Name the keyboard
+\# Name the keyboard
 CONFIG_ZMK_KEYBOARD_NAME="Jones Corne Keyboard"
-...
+
 # Enable USB Logging (this increases power usage by a significant amount, turn it off when not in use)
 # CONFIG_ZMK_USB_LOGGING=y
 ---
