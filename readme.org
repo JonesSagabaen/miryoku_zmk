@@ -1,8 +1,9 @@
-# Corne
+* Corne
 
-## Custom Config
+** Custom Config
 
 Make sure `/config/corne.conf` has `CONFIG_ZMK_KEYBOARD_NAME` variable set
+
 ```
 # Name the keyboard
 CONFIG_ZMK_KEYBOARD_NAME="Jones Corne Keyboard"
@@ -11,9 +12,10 @@ CONFIG_ZMK_KEYBOARD_NAME="Jones Corne Keyboard"
 # CONFIG_ZMK_USB_LOGGING=y
 ```
 
-## Build Configs
+** Build Configs
 
 Create a reset firmware by editing `build.yaml`
+
 ```
 # For simple board + shield combinations, add them
 # to the top level board and shield arrays, for more
@@ -37,7 +39,7 @@ include:
     shield: settings_reset
 ```
 
-## Flash Process
+** Flash Process
 
 1. Load settings_reset-nice_nano_v2-zmk.uf2 onto both boards
 2. Load corne_left nice_view_adapter nice_view-nice_nano_v2-zmk.uf2 onto left board
